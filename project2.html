@@ -1,0 +1,374 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Project</TITLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+let Name = prompt("Hello, What's your name?");
+console.log(Name);
+
+setTimeout(function(){ displayScore() }, 1000*60*4);
+
+
+let a = Math.floor( Math.random() * 100 + 1 );
+let b = Math.floor( Math.random() * 100 + 1 );
+let a1 = a+b; 
+
+/*let c = Math.floor( Math.random() * 100 + 1 );
+let d = Math.floor( Math.random() * 100 + 1 );
+let c1 = c-d; */
+
+let score = 0;
+var x;
+
+
+
+
+
+
+
+
+
+
+
+
+function begin1 (){
+   message3.innerHTML = "";
+   a = Math.floor( Math.random() * 100 + 1 );
+   b = Math.floor( Math.random() * 100 + 1 );
+   a1 = a+b; 
+   disappear1.innerHTML = "";
+   message1.innerHTML = a + "<br/>" + "+" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input001'> <button onclick = 'submit1()'>Submit</Button>";
+   }
+
+function submit1(){
+	let answer1 = input001.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question2()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'begin1()'>next</button>";
+	}
+}
+
+function question2(){
+    console.log(score);
+   a = Math.floor( Math.random() * 100 + 1 );
+   b = Math.floor( Math.random() * 100 + 1 );
+   a1 = a+b; 
+   message1.innerHTML = a + "<br/>" + "+" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit2()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit2() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question3()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question2()'>next</button>";
+	}
+}
+
+function question3(){
+    console.log(score);
+   a = Math.floor( Math.random() * 100 + 1 );
+   b = Math.floor( Math.random() * 100 + 1 );
+   a1 = a-b; 
+   message1.innerHTML = a + "<br/>" + "-" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit3()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit3() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question4()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question3()'>next</button>";
+	}
+}
+
+function question4(){
+    console.log(score);
+   a = Math.floor( Math.random() * 100 + 1 );
+   b = Math.floor( Math.random() * 100 + 1 );
+   a1 = a-b; 
+   message1.innerHTML = a + "<br/>" + "-" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit4()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit4() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question5()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question4()'>next</button>";
+	}
+}
+
+function question5(){
+    console.log(score);
+   a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = a*b; 
+   message1.innerHTML = a + "<br/>" + "*" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit5()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit5() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question6()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question5()'>next</button>";
+	}
+}
+
+function question6(){
+    console.log(score);
+	a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = a*b; 
+   message1.innerHTML = a + "<br/>" + "*" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit6()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit6() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question7()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question6()'>next</button>";
+	}
+}
+
+function question7(){
+    console.log(score);
+   a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = a*b; 
+   message1.innerHTML = a + "<br/>" + "*" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit7()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit7() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question8()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question7()'>next</button>";
+	}
+}
+
+function question8(){
+    console.log(score);
+   a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = Math.floor(a/b); 
+   message1.innerHTML = a + "<br/>" + "/" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit8()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit8() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question9()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question8()'>next</button>";
+	}
+}
+
+function question9(){
+    console.log(score);
+	a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = Math.floor(a/b); 
+   message1.innerHTML = a + "<br/>" + "/" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit9()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit9() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question10()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question9'>next</button>";
+	}
+}
+
+function question10(){
+    console.log(score);
+	a = Math.floor( Math.random() * 20 + 1 );
+   b = Math.floor( Math.random() * 20 + 1 );
+   a1 = Math.floor(a/b); 
+   message1.innerHTML = a + "<br/>" + "/" +"<br/>" + b + "<br/>" + "____";
+   message2.innerHTML = "<input type = text id= 'input002'> <button onclick = 'submit10()'>Submit</Button>";
+   message3.innerHTML = "";
+   show001.innerHTML = "";
+   }
+
+function submit10() {
+	let answer1 = input002.value;
+	show001.innerHTML = answer1;
+	if (answer1 == a1) {
+		score++;
+	   message3.innerHTML = "correct";
+ 	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'displayScore()'>next</button>";
+	}
+	else{
+	   message3.innerHTML = "incorrect";
+	   message2.innerHTML = "";
+	   message4.innerHTML = "<button onclick = 'question10()'>next</button>";
+	}
+}
+
+function displayScore() {
+    document.getElementById("timer").innerHTML = "GAME OVER";
+    clearInterval(x);
+    console.log(score);
+	message1.innerHTML= "Score = " + score;
+	message2.innerHTML= "";
+	message3.innerHTML= "";
+	message4.innerHTML= "";
+	show001.innerHTML = "";
+}
+
+
+function timer() {
+  var minute = 3;
+  var sec = 59;
+  x=setInterval(function() {
+    document.getElementById("timer").innerHTML = "Game over in:" + minute + " : " + sec;
+    sec--;
+    if (sec == 00) {
+        if (minute == 0) {
+        displayScore();
+      }
+      minute --;
+      sec = 60;
+    }
+  }, 1000);
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+<BODY>
+
+   <style>
+		background-color: lightgrey;
+		text-align:center	
+  </style>
+  
+  
+  <div id ="frame001">
+	<H1>Mental Arithmetic</H1>
+	<p id = "message1"> </p>
+	<p id = "message2"> </p>
+	<p id = "show001"> </p>
+	<p id = "message3"> </p>
+	<p id = "message4"> </p>
+
+	<div id = "disappear1"> 
+		<button onclick = "begin1() ;timer();" >Begin</button>
+	</div>
+
+
+  <span id="timer">Timer: 04:00<span>
+
+
+
+
+
+</body>
+</html>
